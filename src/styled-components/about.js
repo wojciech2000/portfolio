@@ -7,7 +7,6 @@ export const AboutWrapper = styled.div`
     transform: translate(-50%,-50%);
     width: 50vw;
     height: 55vh;
-    border-radius: 10px;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
@@ -28,5 +27,6 @@ export const Text = styled.div`
     color: white;
     background: rgba(0,0,0, .8);
     padding: 2%;
+    border-radius: 10px;
     border: 1px solid white;
 `

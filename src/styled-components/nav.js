@@ -30,7 +30,7 @@ export const LiNav = styled.li`
             left: -1%;
             transform: translateY(-15%);
             border-radius: 20px;
-            height: 150%;
+            height: 180%;
             background: white;
         }
     }

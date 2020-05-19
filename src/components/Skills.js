@@ -1,12 +1,12 @@
 import React from 'react'
-import { SkillsWrapper, SkillInfo, SklillIcon, SkillTitle, SklillNames, ContrastColor } from '../styled-components/skills'
+import { SkillsWrapper, SkillColumn, SklillIcon, SkillTitle, SklillNames, ContrastColor } from '../styled-components/skills'
 import { MdLaptopMac } from 'react-icons/md'
 import { FaDatabase } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/fi'
 function Skills() {
     return (
         <SkillsWrapper>
-            <SkillInfo>
+            <SkillColumn>
                 <SklillIcon><MdLaptopMac /></SklillIcon>
                 <SkillTitle>Front-end</SkillTitle>
                 <SklillNames>
@@ -18,8 +18,8 @@ function Skills() {
                     <ContrastColor>REDUX</ContrastColor>
                     <li>STYLED-COMPONENTS</li>
                 </SklillNames>
-            </SkillInfo>
-            <SkillInfo>
+            </SkillColumn>
+            <SkillColumn>
                 <SklillIcon><FaDatabase /></SklillIcon>
                 <SkillTitle>Back-end</SkillTitle>
                 <SklillNames>
@@ -27,8 +27,8 @@ function Skills() {
                     <li>EXPRESS</li>
                     <ContrastColor>MYSQL</ContrastColor>
                 </SklillNames>
-            </SkillInfo>
-            <SkillInfo>
+            </SkillColumn>
+            <SkillColumn>
                 <SklillIcon><FiSettings /></SklillIcon>
                 <SkillTitle>Tools</SkillTitle>
                 <SklillNames>
@@ -36,7 +36,7 @@ function Skills() {
                     <li>FIGMA</li>
                     <li>NPM</li>
                 </SklillNames>
-            </SkillInfo>
+            </SkillColumn>
         </SkillsWrapper>
     )
 }

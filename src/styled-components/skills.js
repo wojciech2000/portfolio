@@ -3,19 +3,19 @@ import styled from 'styled-components'
 export const SkillsWrapper = styled.div`
     width: 50vw;
     position: absolute;
-    border: 1px solid white;
     top: 60%;
     left: 50%;
     transform: translate(-50%,-50%);
     background: rgba(0,0,0, .6);
     border-radius: 10px;
+    border: 1px solid white;
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding: 3% 0;
 `
 
-export const SkillInfo = styled.div`
+export const SkillColumn = styled.div`
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -48,6 +48,7 @@ export const SklillNames = styled.ul`
     color: white;
     text-align: center;
     font-size: .7rem;
+    line-height: 150%;
 `
 
 export const ContrastColor = styled.li`
