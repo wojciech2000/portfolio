@@ -6,7 +6,7 @@ export const AboutWrapper = styled.div`
     left: 50%;
     transform: translate(-50%,-50%);
     width: 50vw;
-    height: 50vh;
+    height: 55vh;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
@@ -15,7 +15,7 @@ export const AboutWrapper = styled.div`
 `
 
 export const Image = styled.img`
-    height: 55%;
+    height: 60%;
     object-fit: fill;
     border-radius: 50%;
     border: 1px solid white;

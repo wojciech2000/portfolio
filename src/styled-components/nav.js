@@ -16,7 +16,7 @@ export const UlNav = styled.ul`
 export const LiNav = styled.li`
 
     position: relative;
-    font-size: 1.1rem;
+    font-size: 1rem;
     width: 25%;
     text-align: center;
 
