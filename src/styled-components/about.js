@@ -11,6 +11,17 @@ export const AboutWrapper = styled.div`
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 768px) and (orientation: portrait)
+    {
+        height: 40vh;
+    }
+
+    @media (max-width: 524px) and (orientation: portrait)
+    {
+        width: 80vw;
+    }
+
 `
 
 export const Image = styled.img`
@@ -29,4 +40,23 @@ export const Text = styled.div`
     padding: 2%;
     border-radius: 10px;
     border: 1px solid white;
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        font-size: 20px;
+        width: 370px;
+    }
+
+    @media (max-width: 768px) and (orientation: portrait)
+    {
+        font-size: 16px;
+        width: 330px;
+    }
+
+    @media (max-width: 524px) and (orientation: portrait)
+    {
+        font-size: 14px;
+        width: 100%;
+    }
+
 `
