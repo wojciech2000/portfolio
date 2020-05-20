@@ -4,6 +4,22 @@ export const HomeWrapper = styled.div`
     position: absolute;
     top: 30vh;
     left: 5vw;
+    color: red;
+
+    @media (max-width: 768px)
+    {
+        top: 50vh;
+        left: 50vw;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: fit-content;
+    }
+
+    @media (max-width: 432px)
+    {
+        top: 40vh;
+    }
+
 `
 
 export const Header = styled.h1`
@@ -12,10 +28,25 @@ export const Header = styled.h1`
     font-size: 1.4rem;
     background: rgba(0,0,0, .1);
     border-radius: 10px;
+
+    @media (max-width: 768px)
+    {
+        font-size: 3rem;
+    }
+
+    @media (max-width: 432px)
+    {
+        background: rgba(0,0,0, .3);
+    }
 `
 
 export const Bigger = styled.span`
     font-size: 2.7rem;
+
+    @media (max-width: 768px)
+    {
+        font-size: 4.5rem;
+    }
 `
 
 export const Contrast = styled.span`
@@ -28,4 +59,9 @@ export const Contrast = styled.span`
 export const Image = styled.img`
     width: 2.5rem;
     margin-top: 2vh;
+
+    @media (max-width: 768px)
+    {
+        width: 5rem;
+    }
 `
