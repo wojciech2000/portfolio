@@ -34,4 +34,11 @@ export const GlobalStyle = createGlobalStyle`
         color: black;
     }
 
+    button, input
+    {
+        outline: none;
+        border: none;
+        background: white;
+    }
+
 `

@@ -49,6 +49,7 @@ export const SklillNames = styled.ul`
     text-align: center;
     font-size: .7rem;
     line-height: 150%;
+    font-family: ${({theme}) => theme.secondFont};
 `
 
 export const ContrastColor = styled.li`
