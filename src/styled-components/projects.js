@@ -14,24 +14,7 @@ export const ProjectsWrapper = styled.div`
     overflow-y: auto;
     margin: 5vh 0;
 
-    ::-webkit-scrollbar
-    {
-        width: 15px;
-    }
 
-    ::-webkit-scrollbar-thumb
-    {
-        width: 100%;
-        background: ${({theme}) => theme.contrastColor};
-        border-radius: 10px
-    }
-
-    ::-webkit-scrollbar-track
-    {
-        width: 100%;
-        background: white;
-        border-radius: 10px
-    }
 `
 
 export const Project = styled.div`

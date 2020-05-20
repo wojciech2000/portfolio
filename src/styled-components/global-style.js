@@ -42,4 +42,23 @@ export const GlobalStyle = createGlobalStyle`
         background: white;
     }
 
+    ::-webkit-scrollbar
+    {
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+        width: 100%;
+        background: ${({theme}) => theme.contrastColor};
+        border-radius: 10px
+    }
+
+    ::-webkit-scrollbar-track
+    {
+        width: 100%;
+        background: white;
+        border-radius: 10px
+    }
+
 `

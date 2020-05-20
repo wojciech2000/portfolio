@@ -15,6 +15,7 @@ export const AboutWrapper = styled.div`
     @media (max-width: 768px) and (orientation: portrait)
     {
         height: 40vh;
+        top: 50%;
     }
 
     @media (max-width: 524px) and (orientation: portrait)

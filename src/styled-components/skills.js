@@ -13,6 +13,21 @@ export const SkillsWrapper = styled.div`
     justify-content: space-around;
     align-items: flex-start;
     padding: 3% 0;
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 3vh 0;
+        top: 55%;
+    }
+
+    @media (max-width: 432px) and (orientation: portrait)
+    {
+        width: 80vw
+    }
+
 `
 
 export const SkillColumn = styled.div`
@@ -20,6 +35,13 @@ export const SkillColumn = styled.div`
     align-items: center;
     flex-direction: column;
     flex: 1;
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        padding: 5% 0;
+        width: 30%;
+    }
+
 `
 
 export const SklillIcon = styled.div`
@@ -32,6 +54,16 @@ export const SklillIcon = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        font-size: 2.5rem;
+    }
+
+    @media (max-width: 432px) and (orientation: portrait)
+    {
+        font-size: 4.5rem;
+    }
 `
 
 export const SkillTitle = styled.span`
@@ -42,6 +74,18 @@ export const SkillTitle = styled.span`
     width: 80%;
     text-align: center;
     margin: 5% 0 10% 0;
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        font-size: 1.1rem;
+        width: 100%;
+    }
+
+    @media (max-width: 432px) and (orientation: portrait)
+    {
+        font-size: 1.5rem;
+    }
+
 `
 
 export const SklillNames = styled.ul`
@@ -50,6 +94,23 @@ export const SklillNames = styled.ul`
     font-size: .7rem;
     line-height: 150%;
     font-family: ${({theme}) => theme.secondFont};
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        margin-top: 10%;
+        width: 300%;
+        font-size: 1rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: 432px) and (orientation: portrait)
+    {
+        font-size: 1.4rem;
+    }
+
 `
 
 export const ContrastColor = styled.li`
