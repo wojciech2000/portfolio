@@ -12,8 +12,9 @@ export const GlobalStyle = createGlobalStyle`
     {
         width: 100vw;
         height: 100vh;
-        background: url(${background}) no-repeat top / cover;
+        background: url(${background}) no-repeat top / cover fixed;
         font-family: ${({theme}) => theme.mainFont};
+        overflow-x: hidden;
     }
 
     *

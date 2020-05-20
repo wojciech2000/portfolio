@@ -1,22 +1,44 @@
 import styled, { css } from 'styled-components'
 
 export const ProjectsWrapper = styled.div`
-    width: 70vw;
+    width: 85vw;
     height: 60vh;
     position: absolute;
-    top: 60%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    overflow-y: auto;
+    margin: 5vh 0;
+
+    ::-webkit-scrollbar
+    {
+        width: 15px;
+    }
+
+    ::-webkit-scrollbar-thumb
+    {
+        width: 100%;
+        background: ${({theme}) => theme.contrastColor};
+        border-radius: 10px
+    }
+
+    ::-webkit-scrollbar-track
+    {
+        width: 100%;
+        background: white;
+        border-radius: 10px
+    }
 `
 
 export const Project = styled.div`
     width: 430px;
     height: 270px;
     position: relative;
+    margin: 30px 60px;
 `
 
 export const DesktopVersion = styled.div`
