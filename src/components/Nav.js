@@ -1,19 +1,44 @@
-import React, { Fragment } from 'react';
+import React, { Fragment, useState, useEffect } from 'react';
 import { NavWrapper, UlNav, LiNav, LinkHome, LinkNav } from '../styled-components/nav'
 import { AiFillHome } from 'react-icons/ai'
 
 function Nav() {
 
+    const [activeNavStates, setActive] = useState([false, false, false, false, false])
+
+    useEffect(()=> {
+        const hrefsLink = Array.from(document.querySelectorAll('a'))
+        const findHref = hrefsLink.findIndex(href => href.pathname === window.location.pathname)
+
+        //reset all tabs
+        let array = [false, false, false, false, false]
+        //set active tab
+        array[findHref] = true
+
+        setActive(array)
+    },[])
+
+    const activeStyle = number => {
+
+        //reset all tabs
+        let array = [false, false, false, false, false]
+        //set active tab
+        array[number] = true
+
+        setActive(array)
+
+    }
+
     return (
         <Fragment>
-            <LinkHome to="/"><AiFillHome /></LinkHome>
+            <LinkHome to="/" active={activeNavStates[0] ? 1 : 0} onClick={()=> activeStyle(0)} ><AiFillHome /></LinkHome>
             <NavWrapper>
 
                 <UlNav>
-                    <LiNav><LinkNav to="/about" >About</LinkNav></LiNav>
-                    <LiNav><LinkNav to="/skills">Skills</LinkNav></LiNav>
-                    <LiNav><LinkNav to="/projects" color="white">Projects</LinkNav></LiNav>
-                    <LiNav><LinkNav to="/contact">Contact</LinkNav></LiNav>
+                    <LiNav><LinkNav to="/about" active={activeNavStates[1] ? 1 : 0} onClick={()=> activeStyle(1)} >About</LinkNav></LiNav>
+                    <LiNav><LinkNav to="/skills" active={activeNavStates[2] ? 1 : 0} onClick={()=> activeStyle(2)} >Skills</LinkNav></LiNav>
+                    <LiNav><LinkNav to="/projects" active={activeNavStates[3] ? 1 : 0} onClick={()=> activeStyle(3)} color="white">Projects</LinkNav></LiNav>
+                    <LiNav><LinkNav to="/contact" active={activeNavStates[4] ? 1 : 0} onClick={()=> activeStyle(4)} >Contact</LinkNav></LiNav>
                 </UlNav>
             </NavWrapper>
         </Fragment>

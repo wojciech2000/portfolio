@@ -1,4 +1,4 @@
-import styled from 'styled-components'
+import styled, { css } from 'styled-components'
 import { Link } from 'react-router-dom'
 
 export const NavWrapper = styled.nav`
@@ -53,29 +53,41 @@ export const LinkHome = styled(Link)`
     top: 6vh;
     color: white;
     font-size: 1.6rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    border-radius: 10px;
+    
+    ${({ active }) => active && activeTab};
 
     @media (max-width: 1024px) and (orientation: portrait)
     {
         font-size: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        padding: 1%;
         background: rgba(0,0,0, .4);
         border: 1px solid white;
-        border-radius: 10px;
     }
+
+`
+
+const activeTab = css`
+    color: ${({ theme }) => theme.contrastColor};
+    background-color: rgba(0,0,0, .7);
 `
 
 export const LinkNav = styled(Link)`
     border-radius: 6px;
     padding: 3% 10%;
     color: ${({color}) => color };
-    
+    transition: all .3s ease-in-out;
+    transition-property: color, background-color;
+    ${({ active }) => active && activeTab};
+
     @media (max-width: 1024px) and (orientation: portrait)
     {
         color: black;
         font-weight: 600;
+        ${({ active }) => active && activeTab};
     }
 
 `
