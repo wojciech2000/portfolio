@@ -39,7 +39,7 @@ export const SkillColumn = styled.div`
 
     @media (max-width: 1024px) and (orientation: portrait)
     {
-        padding: 5% 0;
+        padding: 3% 0;
         width: 30%;
     }
 

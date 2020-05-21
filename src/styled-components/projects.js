@@ -59,8 +59,13 @@ export const DesktopVersion = styled.div`
 
     @media (max-width: 645px) 
     {
-        width: 100%;
+        width: 70%;
         height: 45%;
+    }
+
+    @media (max-width: 460px) 
+    {
+        width: 100%;
     }
 
 `

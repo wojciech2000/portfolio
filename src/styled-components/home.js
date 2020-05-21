@@ -6,7 +6,7 @@ export const HomeWrapper = styled.div`
     left: 5vw;
     color: red;
 
-    @media (max-width: 768px)
+    @media (max-width: 1024px) and (orientation: portrait)
     {
         top: 50vh;
         left: 50vw;
@@ -29,6 +29,12 @@ export const Header = styled.h1`
     background: rgba(0,0,0, .1);
     border-radius: 10px;
 
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        font-size: 3.6rem;
+    }
+
     @media (max-width: 768px)
     {
         font-size: 3rem;
@@ -42,6 +48,11 @@ export const Header = styled.h1`
 
 export const Bigger = styled.span`
     font-size: 2.7rem;
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        font-size: 5.5rem;
+    }
 
     @media (max-width: 768px)
     {
@@ -59,6 +70,11 @@ export const Contrast = styled.span`
 export const Image = styled.img`
     width: 2.5rem;
     margin-top: 2vh;
+
+    @media (max-width: 1024px) and (orientation: portrait)
+    {
+        width: 7rem;
+    }
 
     @media (max-width: 768px)
     {
