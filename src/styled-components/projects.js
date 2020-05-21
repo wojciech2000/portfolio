@@ -14,6 +14,17 @@ export const ProjectsWrapper = styled.div`
     overflow-y: auto;
     margin: 5vh 0;
 
+    @media (max-width: 645px) 
+    {
+        width: 90vw;
+        height: 75vh;
+    }
+
+    @media (max-width: 460px) 
+    {
+        width: 100vw;
+    }
+
 
 `
 
@@ -22,6 +33,20 @@ export const Project = styled.div`
     height: 270px;
     position: relative;
     margin: 30px 60px;
+
+    @media (max-width: 645px) 
+    {
+        width: 90%;
+        margin: 15px 20px;
+        height: 400px;
+    }
+
+    @media (max-width: 460px) 
+    {
+        width: 90%;
+        height: 500px;
+    }
+
 `
 
 export const DesktopVersion = styled.div`
@@ -31,6 +56,13 @@ export const DesktopVersion = styled.div`
     background: white;
     border-radius: 10px;
     z-index: 10;
+
+    @media (max-width: 645px) 
+    {
+        width: 100%;
+        height: 45%;
+    }
+
 `
 
 export const MobileVersion = styled.div`
@@ -43,6 +75,23 @@ export const MobileVersion = styled.div`
     background: gray;
     border-radius: 10px;
     z-index: 20;
+
+    @media (max-width: 645px) 
+    {
+        width: 120px;
+        height: 50%;
+        left: auto;
+        right: 0;
+        bottom: 40%;
+        transform: translateX(0);
+    }
+
+    @media (max-width: 460px) 
+    {
+        height: 40%;
+        bottom: 45%;
+    }
+
 `
 
 export const ProjectInfo = styled.div`
@@ -53,6 +102,12 @@ export const ProjectInfo = styled.div`
     bottom: 12%;
     background: rgba(0,0,0, .5);
     border-radius: 10px;
+
+    @media(max-width: 645px)
+    {
+        background: rgba(0,0,0, .7);
+    }
+
 `
 
 export const UlList = styled.ul`
@@ -62,6 +117,34 @@ export const UlList = styled.ul`
     right: 5%;
     top: 5%;
     line-height: 28px;
+
+    @media (max-width: 645px) 
+    {
+        right: auto;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        font-size: 16px;
+        width: 100%;
+        height: 35%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    @media (max-width: 460px) 
+    {
+        font-size: 15px;
+        height: 25%;
+    }
+`
+
+export const LiList = styled.li`
+    @media (max-width: 645px) 
+    {
+        margin: 4% 2%;
+    }
 `
 
 export const Buttons = styled.div`
@@ -71,6 +154,19 @@ export const Buttons = styled.div`
     width: 150px;
     display: flex;
     justify-content: space-between;
+
+    @media (max-width: 645px) 
+    {
+        bottom: 40%;
+        width: 180px; 
+    }
+
+    @media (max-width: 460px) 
+    {
+        left: 50%;
+        bottom: 28%;
+        transform: translateX(-50%)
+    }
 
 ` 
 
@@ -89,4 +185,12 @@ export const Button = styled.button`
     {
         cursor: pointer;
     }
+
+    @media (max-width: 645px) 
+    {
+        width: 80px;
+        padding: 2px;
+        font-size: 16px;
+    }
+
 `

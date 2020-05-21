@@ -6,7 +6,7 @@ function About() {
     return (
         <AboutWrapper>
             <Image src={me} />
-            <Text>My name is Wojciech,<br /> I was born and I’m living in Poland.<br /> My main specialisation is front-end, but<br /> I know basic of back-end</Text>
+            <Text>My name is Wojciech,<br /> I was born and I’m living in Poland.<br /> My main specialisation is front-end, but<br /> I know basics of back-end</Text>
         </AboutWrapper>
     )
 }

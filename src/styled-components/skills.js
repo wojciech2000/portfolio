@@ -21,6 +21,7 @@ export const SkillsWrapper = styled.div`
         align-items: center;
         padding: 3vh 0;
         top: 55%;
+        width: 60vw;
     }
 
     @media (max-width: 432px) and (orientation: portrait)

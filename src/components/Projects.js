@@ -1,5 +1,5 @@
 import React from 'react'
-import { ProjectsWrapper, Project, DesktopVersion, MobileVersion, ProjectInfo, UlList, Buttons, Button } from '../styled-components/projects'
+import { ProjectsWrapper, Project, DesktopVersion, MobileVersion, ProjectInfo, UlList, LiList, Buttons, Button } from '../styled-components/projects'
 
 function Projects() {
     return (
@@ -9,12 +9,12 @@ function Projects() {
                 <MobileVersion></MobileVersion>
                 <ProjectInfo>
                     <UlList>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>SCSS</li>
-                        <li>MongoDB</li>
+                        <LiList>React</LiList>
+                        <LiList>Redux</LiList>
+                        <LiList>Node.js</LiList>
+                        <LiList>Express</LiList>
+                        <LiList>SCSS</LiList>
+                        <LiList>MongoDB</LiList>
                     </UlList>
                     <Buttons>
                         <Button code>Code</Button>
@@ -27,12 +27,10 @@ function Projects() {
                 <MobileVersion></MobileVersion>
                 <ProjectInfo>
                     <UlList>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>SCSS</li>
-                        <li>MongoDB</li>
+                        <LiList>React</LiList>
+                        <LiList>Redux</LiList>
+                        <LiList>SCSS</LiList>
+                        <LiList>MongoDB</LiList>
                     </UlList>
                     <Buttons>
                         <Button code>Code</Button>
@@ -45,12 +43,9 @@ function Projects() {
                 <MobileVersion></MobileVersion>
                 <ProjectInfo>
                     <UlList>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>SCSS</li>
-                        <li>MongoDB</li>
+                        <LiList>React</LiList>
+                        <LiList>Redux</LiList>
+                        <LiList>Node.js</LiList>
                     </UlList>
                     <Buttons>
                         <Button code>Code</Button>
@@ -63,12 +58,11 @@ function Projects() {
                 <MobileVersion></MobileVersion>
                 <ProjectInfo>
                     <UlList>
-                        <li>React</li>
-                        <li>Redux</li>
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>SCSS</li>
-                        <li>MongoDB</li>
+                        <LiList>React</LiList>
+                        <LiList>Node.js</LiList>
+                        <LiList>Express</LiList>
+                        <LiList>SCSS</LiList>
+                        <LiList>MongoDB</LiList>
                     </UlList>
                     <Buttons>
                         <Button code>Code</Button>
