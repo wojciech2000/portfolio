@@ -21,7 +21,12 @@ export const NavWrapper = styled.nav`
         right: 50%;
         transform: translateX(50%);
         transition: all .5s ease-in-out;
-        transform:${({hideNav}) => hideNav && 'translate(100%, -50%) scale(0)'};
+        opacity: 1;
+
+        ${({hideNav}) => hideNav && css`
+            transform: translate(100%, -50%) scale(0);
+            opacity: .3;
+        `};
     }
 `
 export const UlNav = styled.ul`
@@ -34,7 +39,7 @@ export const UlNav = styled.ul`
         background-color: rgba(255,255,255, .8);
         flex-direction: column;
         align-items: center;
-        border-radius: 0 0 10px 10px;
+        border-radius: 10px;
     }
 `
 
@@ -108,7 +113,7 @@ export const LinkHome = styled(Link)`
     {
         font-size: 5rem;
         left: 8vw;
-        border-radius: 0 10px 10px 10px;
+        border-radius: 10px;
     }
 
 `
@@ -149,7 +154,7 @@ export const Hamburger = styled.div`
         align-items: center;
         justify-content: center;
         padding: 1%;
-        border-radius: 10px 0 10px 10px;
+        border-radius: 10px;
         z-index: 200;
         background: white;
         border: 1px solid white;
