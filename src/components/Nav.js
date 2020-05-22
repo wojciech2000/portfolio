@@ -8,12 +8,12 @@ function Nav() {
 
     useEffect(()=> {
         const hrefsLink = Array.from(document.querySelectorAll('a'))
-        const findHref = hrefsLink.findIndex(href => href.pathname === window.location.pathname)
+        const currentPage = hrefsLink.findIndex(href => href.pathname === window.location.pathname)
 
         //reset all tabs
         let array = [false, false, false, false, false]
         //set active tab
-        array[findHref] = true
+        array[currentPage] = true
 
         setActive(array)
     },[])
