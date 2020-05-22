@@ -53,7 +53,7 @@ export const DesktopVersion = styled.div`
     position: absolute;
     width: 60%; 
     height: 70%;
-    background: white;
+    background: green;
     border-radius: 10px;
     z-index: 10;
 

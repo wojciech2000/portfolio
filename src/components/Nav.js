@@ -1,10 +1,12 @@
 import React, { Fragment, useState, useEffect } from 'react';
-import { NavWrapper, UlNav, LiNav, LinkHome, LinkNav } from '../styled-components/nav'
+import { NavWrapper, UlNav, LiNav, LinkHome, Hamburger, LinkNav } from '../styled-components/nav'
 import { AiFillHome } from 'react-icons/ai'
+import { FaHamburger } from 'react-icons/fa'
 
 function Nav() {
 
     const [activeNavStates, setActive] = useState([false, false, false, false, false])
+    const [navState, setNavState] = useState(true)
 
     useEffect(()=> {
         const hrefsLink = Array.from(document.querySelectorAll('a'))
@@ -18,6 +20,10 @@ function Nav() {
         setActive(array)
     },[])
 
+    const toggleNav = () => {
+        setNavState(!navState)
+    }
+
     const activeStyle = number => {
 
         //reset all tabs
@@ -26,13 +32,17 @@ function Nav() {
         array[number] = true
 
         setActive(array)
-
+        //hide navbar on mobile
+        number != 0 && toggleNav()
     }
 
     return (
         <Fragment>
             <LinkHome to="/" active={activeNavStates[0] ? 1 : 0} onClick={()=> activeStyle(0)} ><AiFillHome /></LinkHome>
-            <NavWrapper>
+            <Hamburger onClick={toggleNav}>
+                <FaHamburger />
+            </Hamburger>
+            <NavWrapper hideNav={navState}>
 
                 <UlNav>
                     <LiNav><LinkNav to="/about" active={activeNavStates[1] ? 1 : 0} onClick={()=> activeStyle(1)} >About</LinkNav></LiNav>
