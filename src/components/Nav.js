@@ -33,7 +33,7 @@ function Nav() {
 
         setActive(array)
         //hide navbar on mobile
-        number != 0 && toggleNav()
+        number !== 0 && toggleNav()
     }
 
     return (

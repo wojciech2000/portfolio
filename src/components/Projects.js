@@ -1,12 +1,14 @@
 import React from 'react'
 import { ProjectsWrapper, Project, DesktopVersion, MobileVersion, ProjectInfo, UlList, LiList, Buttons, Button } from '../styled-components/projects'
+import test from '../pictures/test.gif'
+import testte from '../pictures/test2.gif'
 
 function Projects() {
     return (
         <ProjectsWrapper>
             <Project>
-                <DesktopVersion></DesktopVersion>
-                <MobileVersion></MobileVersion>
+                <DesktopVersion src={testte} />
+                <MobileVersion src={testte} />
                 <ProjectInfo>
                     <UlList>
                         <LiList>React</LiList>
