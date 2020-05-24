@@ -165,7 +165,7 @@ export const Buttons = styled.div`
 
 export const Button = styled.button`
     width: 70px;
-    padding: 2px;
+    padding: 2.5px;
     font-size: 18px;
     border-radius: 8px;
     ${({code, theme}) => code && css`

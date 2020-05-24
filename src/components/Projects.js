@@ -1,14 +1,14 @@
 import React from 'react'
 import { ProjectsWrapper, Project, DesktopVersion, MobileVersion, ProjectInfo, UlList, LiList, Buttons, Button } from '../styled-components/projects'
-import test from '../pictures/test.gif'
-import testte from '../pictures/test2.gif'
+import progresserDesktop from '../pictures/progresser-desktop.gif'
+import progresserMobile from '../pictures/progresser-mobile.gif'
 
 function Projects() {
     return (
         <ProjectsWrapper>
             <Project>
-                <DesktopVersion src={testte} />
-                <MobileVersion src={testte} />
+                <DesktopVersion src={progresserDesktop} />
+                <MobileVersion src={progresserMobile} />
                 <ProjectInfo>
                     <UlList>
                         <LiList>React</LiList>
@@ -19,56 +19,8 @@ function Projects() {
                         <LiList>MongoDB</LiList>
                     </UlList>
                     <Buttons>
-                        <Button code>Code</Button>
-                        <Button>Live</Button>
-                    </Buttons>
-                </ProjectInfo>
-            </Project>
-            <Project>
-                <DesktopVersion></DesktopVersion>
-                <MobileVersion></MobileVersion>
-                <ProjectInfo>
-                    <UlList>
-                        <LiList>React</LiList>
-                        <LiList>Redux</LiList>
-                        <LiList>SCSS</LiList>
-                        <LiList>MongoDB</LiList>
-                    </UlList>
-                    <Buttons>
-                        <Button code>Code</Button>
-                        <Button>Live</Button>
-                    </Buttons>
-                </ProjectInfo>
-            </Project>
-            <Project>
-                <DesktopVersion></DesktopVersion>
-                <MobileVersion></MobileVersion>
-                <ProjectInfo>
-                    <UlList>
-                        <LiList>React</LiList>
-                        <LiList>Redux</LiList>
-                        <LiList>Node.js</LiList>
-                    </UlList>
-                    <Buttons>
-                        <Button code>Code</Button>
-                        <Button>Live</Button>
-                    </Buttons>
-                </ProjectInfo>
-            </Project>
-            <Project>
-                <DesktopVersion></DesktopVersion>
-                <MobileVersion></MobileVersion>
-                <ProjectInfo>
-                    <UlList>
-                        <LiList>React</LiList>
-                        <LiList>Node.js</LiList>
-                        <LiList>Express</LiList>
-                        <LiList>SCSS</LiList>
-                        <LiList>MongoDB</LiList>
-                    </UlList>
-                    <Buttons>
-                        <Button code>Code</Button>
-                        <Button>Live</Button>
+                        <a href="https://github.com/wojciech2000/Progresser" target="_blank" rel="noopener noreferrer"><Button code>Code</Button></a>
+                        <a href="https://github.com/wojciech2000/Progresser" target="_blank" rel="noopener noreferrer"><Button>Live</Button></a>
                     </Buttons>
                 </ProjectInfo>
             </Project>
