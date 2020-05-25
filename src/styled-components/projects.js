@@ -113,6 +113,7 @@ export const UlList = styled.ul`
     font-size: 18px;
     position: absolute;
     right: 3%;
+    width: 80px;
     top: 5%;
     line-height: 28px;
 
