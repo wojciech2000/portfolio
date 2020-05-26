@@ -4,6 +4,8 @@ import progresserDesktop from '../pictures/progresser-desktop.gif'
 import progresserMobile from '../pictures/progresser-mobile.gif'
 import eliminationTableDesktop from '../pictures/elimination_table-desktop.gif'
 import eliminationTableMobile from '../pictures/elimination_table-mobile.gif'
+import portfolioDesktop from '../pictures/portfolio-desktop.gif'
+import portfolioMobile from '../pictures/portfolio-mobile.gif'
 
 function Projects() {
 
@@ -13,21 +15,24 @@ function Projects() {
             {
                 desktop: progresserDesktop,
                 mobile: progresserMobile,
-                usedTechnologies: [
-                    "React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"
-                ],
+                usedTechnologies: ["React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"],
                 githubLink: "https://github.com/wojciech2000/Progresser",
                 liveLink: "https://github.com/wojciech2000/Progresser"
             },
             {
                 desktop: eliminationTableDesktop,
                 mobile: eliminationTableMobile,
-                usedTechnologies: [
-                    "HTML", "SCSS", "JS"
-                ],
+                usedTechnologies: ["HTML", "SCSS", "JS"],
                 githubLink: "https://github.com/wojciech2000/Elimination-Table",
                 liveLink: "https://github.com/wojciech2000/Elimination-Table"
             },
+            {
+                desktop: portfolioDesktop,
+                mobile: portfolioMobile,
+                usedTechnologies: ["React", "Styled"],
+                githubLink: "https://github.com/wojciech2000/Elimination-Table",
+                liveLink: "https://github.com/wojciech2000/Elimination-Table"
+            }
         ]
 
 
