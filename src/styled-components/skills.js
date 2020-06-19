@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const SkillsWrapper = styled.div`
+export const SkillsWrapper = styled(motion.div)`
     width: 50vw;
     position: absolute;
     top: 60%;

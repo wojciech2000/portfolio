@@ -1,11 +1,19 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { DataContext } from './DataContext'
 import { SkillsWrapper, SkillColumn, SklillIcon, SkillTitle, SklillNames, ContrastColor } from '../styled-components/skills'
 import { MdLaptopMac } from 'react-icons/md'
 import { FaDatabase } from 'react-icons/fa'
 import { FiSettings } from 'react-icons/fi'
 function Skills() {
+
+    const { pageVariants } = useContext(DataContext)
+
     return (
-        <SkillsWrapper>
+        <SkillsWrapper
+        initial='in'
+        animate='done'
+        exit='out'
+        variants={pageVariants}>
             <SkillColumn>
                 <SklillIcon><MdLaptopMac /></SklillIcon>
                 <SkillTitle>Front-end</SkillTitle>

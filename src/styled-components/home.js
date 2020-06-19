@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const HomeWrapper = styled.div`
+export const HomeWrapper = styled(motion.div)`
     position: absolute;
     top: 30vh;
     left: 5vw;

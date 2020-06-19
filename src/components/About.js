@@ -1,10 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { DataContext } from './DataContext'
 import { AboutWrapper, Image, Text } from '../styled-components/about'
 import me from '../pictures/me.jpg'
 
 function About() {
+
+    const { pageVariants } = useContext(DataContext)
+
     return (
-        <AboutWrapper>
+        <AboutWrapper
+        initial='in'
+        animate='done'
+        exit='out'
+        variants={pageVariants}>
             <Image src={me} />
             <Text>My name is Wojciech,<br /> I was born and I’m living in Poland.<br /> My main specialisation is front-end, but<br /> I know basics of back-end</Text>
         </AboutWrapper>

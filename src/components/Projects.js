@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useContext } from 'react'
+import { DataContext } from './DataContext'
 import { ProjectsWrapper, Project, DesktopVersion, MobileVersion, ProjectInfo, UlList, LiList, Buttons, Button } from '../styled-components/projects'
 import progresserDesktop from '../pictures/progresser-desktop.gif'
 import progresserMobile from '../pictures/progresser-mobile.gif'
@@ -9,6 +10,8 @@ import portfolioMobile from '../pictures/portfolio-mobile.gif'
 
 function Projects() {
 
+    const { pageVariants } = useContext(DataContext)
+
     const displayProjects = () => {
 
         const projects = [
@@ -17,21 +20,20 @@ function Projects() {
                 mobile: progresserMobile,
                 usedTechnologies: ["React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"],
                 githubLink: "https://github.com/wojciech2000/Progresser",
-                liveLink: "https://github.com/wojciech2000/Progresser"
+                liveLink: "https://progresser-app.herokuapp.com/"
             },
             {
                 desktop: eliminationTableDesktop,
                 mobile: eliminationTableMobile,
                 usedTechnologies: ["HTML", "SCSS", "JS"],
-                githubLink: "https://github.com/wojciech2000/Elimination-Table",
-                liveLink: "https://github.com/wojciech2000/Elimination-Table"
+                githubLink: "https://github.com/wojciech2000/elimination-table",
+                liveLink: "https://wojciech2000.github.io/elimination-table/"
             },
             {
                 desktop: portfolioDesktop,
                 mobile: portfolioMobile,
-                usedTechnologies: ["React", "Styled"],
-                githubLink: "https://github.com/wojciech2000/Elimination-Table",
-                liveLink: "https://github.com/wojciech2000/Elimination-Table"
+                usedTechnologies: ["React", "Styled-Components"],
+                githubLink: "https://github.com/wojciech2000/portfolio",
             }
         ]
 
@@ -47,7 +49,7 @@ function Projects() {
                 </UlList>
                 <Buttons>
                     <a href={githubLink} target="_blank" rel="noopener noreferrer"><Button code>Code</Button></a>
-                    <a href={liveLink} target="_blank" rel="noopener noreferrer"><Button>Live</Button></a>
+                    {liveLink && <a href={liveLink} target="_blank" rel="noopener noreferrer"><Button>Live</Button></a>}
                 </Buttons>
             </ProjectInfo>
         </Project>
@@ -57,7 +59,11 @@ function Projects() {
     }
 
     return (
-        <ProjectsWrapper>
+        <ProjectsWrapper
+        initial='in'
+        animate='done'
+        exit='out'
+        variants={pageVariants}>
             {displayProjects()}
         </ProjectsWrapper>
     )

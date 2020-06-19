@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const ProjectsWrapper = styled.div`
+export const ProjectsWrapper = styled(motion.div)`
     width: 85vw;
     height: 60vh;
     position: absolute;

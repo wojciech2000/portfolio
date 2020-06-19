@@ -1,6 +1,7 @@
 import styled from 'styled-components'
+import { motion } from 'framer-motion'
 
-export const ContactWrapper = styled.div`
+export const ContactWrapper = styled(motion.div)`
     width: 40vw;
     position: absolute;
     top: 60%;
