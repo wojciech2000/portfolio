@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import { motion } from 'framer-motion'
+import { AiOutlineGithub } from 'react-icons/ai'
 
 export const ContactWrapper = styled(motion.div)`
     width: 40vw;
@@ -71,20 +72,21 @@ export const ContrastColor = styled.span`
     color: ${({theme}) => theme.contrastColor};
 `
 
-export const GitHub = styled.img`
+export const GitHub = styled(AiOutlineGithub)`
     margin-top: 35%;
-    width: 3rem;
+    font-size: 2.5rem;
+    color: white;
 
     @media (max-width: 1024px) and (orientation: portrait)
     {
         margin-top: 40%;
-        width: 5rem;
+        font-size: 4rem;
     }
 
     @media (max-width: 432px) and (orientation: portrait)
     {
         margin-top: 45%;
-        width: 6rem;
+        font-size: 5rem;
     }
 
 `
