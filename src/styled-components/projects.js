@@ -2,7 +2,7 @@ import styled, { css } from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const ProjectsWrapper = styled(motion.div)`
-    width: 85vw;
+    width: 95vw;
     height: 60vh;
     position: absolute;
     top: 50%;
@@ -95,9 +95,9 @@ export const MobileVersion = styled.img`
 
 export const ProjectInfo = styled.div`
     position: absolute;
-    width: 93%; 
+    width: 87%; 
     height: 80%;
-    right: 0;
+    right: 5%;
     bottom: 12%;
     background: rgba(0,0,0, .5);
     border-radius: 10px;
@@ -113,10 +113,9 @@ export const UlList = styled.ul`
     color: white;
     font-size: 18px;
     position: absolute;
-    right: 3%;
-    width: 80px;
+    left: 85%;
     top: 5%;
-    line-height: 28px;
+    width: fit-content;
 
     @media (max-width: 700px) 
     {
@@ -141,9 +140,21 @@ export const UlList = styled.ul`
 `
 
 export const LiList = styled.li`
+
+    padding: 5px;
+    border: 1px solid ${({theme}) => theme.contrastColor};
+    border-radius: 10px;
+    margin: 5% 0;
+    color: black;
+    background-color: white;
+    text-align: center;
+
     @media (max-width: 700px) 
     {
         margin: 4% 2%;
+        color: white;
+        background-color: transparent;
+        border: none;
     }
 `
 
@@ -153,7 +164,7 @@ export const Buttons = styled.div`
     left: 9%;
     width: 160px;
     display: flex;
-    justify-content: space-between;
+    justify-content:  ${({portfolio}) => portfolio ? "center" : "space-between"};
 
     @media (max-width: 700px) 
     {

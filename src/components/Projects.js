@@ -47,7 +47,7 @@ function Projects() {
                 <UlList>
                     {usedTechnologies.map((technologie, index) => <LiList key={index}>{technologie}</LiList>)}
                 </UlList>
-                <Buttons>
+                <Buttons portfolio={desktop === portfolioDesktop ? true : false}>
                     <a href={githubLink} target="_blank" rel="noopener noreferrer"><Button code>Code</Button></a>
                     {liveLink && <a href={liveLink} target="_blank" rel="noopener noreferrer"><Button>Live</Button></a>}
                 </Buttons>
