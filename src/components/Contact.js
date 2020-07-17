@@ -16,7 +16,7 @@ function Contact() {
         variants={pageVariants}>
             <ContactInformation>
                 <Icon><GrMail /></Icon>
-                <span>antonik.wojciech@gmail.com</span>
+                <span>antonik.wojciech2000@gmail.com</span>
             </ContactInformation>
 
             <ContactInformation>
