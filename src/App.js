@@ -22,7 +22,7 @@ function App() {
 
               <AnimatePresence>
                   <Switch location={location} key={location.pathname}>
-                    <Route path='/' exact component={Home}/>
+                    <Route path='/portfolio' exact component={Home}/>
                     <Route path='/about' component={About}/>
                     <Route path='/skills' component={Skills}/>
                     <Route path='/projects' component={Projects}/>

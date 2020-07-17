@@ -38,7 +38,7 @@ function Nav() {
 
     return (
         <Fragment>
-            <LinkHome to="/" active={activeNavStates[0] ? 1 : 0} onClick={()=> activeStyle(0)} ><AiFillHome /></LinkHome>
+            <LinkHome to="/portfolio" active={activeNavStates[0] ? 1 : 0} onClick={()=> activeStyle(0)} ><AiFillHome /></LinkHome>
             <Hamburger onClick={toggleNav}>
                 <FaHamburger />
             </Hamburger>
