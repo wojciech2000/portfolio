@@ -7,6 +7,8 @@ import eliminationTableDesktop from '../pictures/elimination_table-desktop.gif'
 import eliminationTableMobile from '../pictures/elimination_table-mobile.gif'
 import portfolioDesktop from '../pictures/portfolio-desktop.gif'
 import portfolioMobile from '../pictures/portfolio-mobile.gif'
+import eCommerceDesktop from '../pictures/e-commerce-desktop.gif'
+import eCommerceMobile from '../pictures/e-commerce-mobile.gif'
 
 function Projects() {
 
@@ -34,6 +36,13 @@ function Projects() {
                 mobile: portfolioMobile,
                 usedTechnologies: ["React", "Styled-Components"],
                 githubLink: "https://github.com/wojciech2000/portfolio",
+            },
+            {
+                desktop: eCommerceDesktop,
+                mobile: eCommerceMobile,
+                usedTechnologies: ["React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"],
+                githubLink: "https://github.com/wojciech2000/e-commerce-shop",
+                liveLink: "https://e-comerce-app.herokuapp.com/"
             }
         ]
 

@@ -21,7 +21,7 @@ function Contact() {
 
             <ContactInformation>
                 <Icon><FaPhoneAlt /></Icon>
-                <ContrastColor >000 000 000</ContrastColor>
+                <ContrastColor >782 480 731</ContrastColor>
             </ContactInformation>
 
             <a href="https://github.com/wojciech2000" target="_blank" rel="noopener noreferrer" title="Check out my github"><GitHub /></a>
