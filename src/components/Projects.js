@@ -11,14 +11,14 @@ import {
   Buttons,
   Button,
 } from "../styled-components/projects";
-import progresserDesktop from "../pictures/progresser-desktop.gif";
-import progresserMobile from "../pictures/progresser-mobile.gif";
-import eliminationTableDesktop from "../pictures/elimination_table-desktop.gif";
-import eliminationTableMobile from "../pictures/elimination_table-mobile.gif";
-import portfolioDesktop from "../pictures/portfolio-desktop.gif";
-import portfolioMobile from "../pictures/portfolio-mobile.gif";
-import eCommerceDesktop from "../pictures/e-commerce-desktop.gif";
-import eCommerceMobile from "../pictures/e-commerce-mobile.gif";
+import progresserDesktop from "../pictures/progresser-desktop.png";
+import progresserMobile from "../pictures/progresser-mobile.png";
+import eliminationTableDesktop from "../pictures/elimination_table-desktop.png";
+import eliminationTableMobile from "../pictures/elimination_table-mobile.png";
+import portfolioDesktop from "../pictures/portfolio-desktop.png";
+import portfolioMobile from "../pictures/portfolio-mobile.png";
+import eCommerceDesktop from "../pictures/e-commerce-desktop.png";
+import eCommerceMobile from "../pictures/e-commerce-mobile.png";
 
 function Projects() {
   const {pageVariants} = useContext(DataContext);
