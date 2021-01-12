@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.js": "/portfolio/static/js/main.bef7610a.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.bef7610a.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.e240a9c0.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.e240a9c0.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.f4f2abbf.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.f4f2abbf.js.map",
-    "static/js/2.701d1abc.chunk.js": "/portfolio/static/js/2.701d1abc.chunk.js",
-    "static/js/2.701d1abc.chunk.js.map": "/portfolio/static/js/2.701d1abc.chunk.js.map",
+    "static/js/2.ea333430.chunk.js": "/portfolio/static/js/2.ea333430.chunk.js",
+    "static/js/2.ea333430.chunk.js.map": "/portfolio/static/js/2.ea333430.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.a418aa6649c5d6953fb18fa5667ae9d9.js": "/portfolio/precache-manifest.a418aa6649c5d6953fb18fa5667ae9d9.js",
+    "precache-manifest.77ef5a48e6b79b01b1e8938c4c400e8c.js": "/portfolio/precache-manifest.77ef5a48e6b79b01b1e8938c4c400e8c.js",
     "service-worker.js": "/portfolio/service-worker.js",
-    "static/js/2.701d1abc.chunk.js.LICENSE.txt": "/portfolio/static/js/2.701d1abc.chunk.js.LICENSE.txt",
+    "static/js/2.ea333430.chunk.js.LICENSE.txt": "/portfolio/static/js/2.ea333430.chunk.js.LICENSE.txt",
     "static/media/background.jpg": "/portfolio/static/media/background.7117961b.jpg",
     "static/media/e-commerce-desktop.png": "/portfolio/static/media/e-commerce-desktop.9f25cea5.png",
     "static/media/e-commerce-mobile.png": "/portfolio/static/media/e-commerce-mobile.b8934931.png",
@@ -20,11 +20,13 @@
     "static/media/portfolio-desktop.png": "/portfolio/static/media/portfolio-desktop.72db5358.png",
     "static/media/portfolio-mobile.png": "/portfolio/static/media/portfolio-mobile.60f53c94.png",
     "static/media/progresser-desktop.png": "/portfolio/static/media/progresser-desktop.c074565c.png",
-    "static/media/progresser-mobile.png": "/portfolio/static/media/progresser-mobile.f4dac6c8.png"
+    "static/media/progresser-mobile.png": "/portfolio/static/media/progresser-mobile.f4dac6c8.png",
+    "static/media/team-mate-finder-desktop.png": "/portfolio/static/media/team-mate-finder-desktop.47c35035.png",
+    "static/media/team-mate-finder-mobile.png": "/portfolio/static/media/team-mate-finder-mobile.4e7744ca.png"
   },
   "entrypoints": [
     "static/js/runtime-main.f4f2abbf.js",
-    "static/js/2.701d1abc.chunk.js",
-    "static/js/main.bef7610a.chunk.js"
+    "static/js/2.ea333430.chunk.js",
+    "static/js/main.e240a9c0.chunk.js"
   ]
 }

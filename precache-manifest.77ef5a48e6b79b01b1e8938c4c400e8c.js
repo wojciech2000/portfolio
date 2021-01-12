@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "697ec8faa0dbb3cf6c02f9ff6c724d85",
+    "revision": "30a4700506e5a8ff57d497e0cb1977e6",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "f831ae70c91c807f723a",
-    "url": "/portfolio/static/js/2.701d1abc.chunk.js"
+    "revision": "8e61d39740f0ffa08e3c",
+    "url": "/portfolio/static/js/2.ea333430.chunk.js"
   },
   {
     "revision": "c87550333da8df8ab4c80bd1d6e9defb",
-    "url": "/portfolio/static/js/2.701d1abc.chunk.js.LICENSE.txt"
+    "url": "/portfolio/static/js/2.ea333430.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "64546a39497eba36dd37",
-    "url": "/portfolio/static/js/main.bef7610a.chunk.js"
+    "revision": "4491ccb84dd281c71d3d",
+    "url": "/portfolio/static/js/main.e240a9c0.chunk.js"
   },
   {
     "revision": "e5284505c87d0b24b753",
@@ -62,5 +62,13 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "f4dac6c818b14419c1fae62523811270",
     "url": "/portfolio/static/media/progresser-mobile.f4dac6c8.png"
+  },
+  {
+    "revision": "47c35035d1cc0e628c991a0d818f3da4",
+    "url": "/portfolio/static/media/team-mate-finder-desktop.47c35035.png"
+  },
+  {
+    "revision": "4e7744caf3e8e554842814d9f7f3fc2f",
+    "url": "/portfolio/static/media/team-mate-finder-mobile.4e7744ca.png"
   }
 ]);
