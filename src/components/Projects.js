@@ -19,6 +19,8 @@ import portfolioDesktop from "../pictures/portfolio-desktop.png";
 import portfolioMobile from "../pictures/portfolio-mobile.png";
 import eCommerceDesktop from "../pictures/e-commerce-desktop.png";
 import eCommerceMobile from "../pictures/e-commerce-mobile.png";
+import teamMatesFinderDesktop from "../pictures/team-mate-finder-desktop.png";
+import teamMatesFinderMobile from "../pictures/team-mate-finder-mobile.png";
 
 function Projects() {
   const {pageVariants} = useContext(DataContext);
@@ -66,6 +68,19 @@ function Projects() {
         githubLink: "https://github.com/wojciech2000/e-commerce-shop",
         liveLink: "https://e-comerce-app.herokuapp.com/",
       },
+      {
+        desktop: teamMatesFinderDesktop,
+        mobile: teamMatesFinderMobile,
+        usedTechnologies: [
+          "React",
+          "SCSS",
+          "Node.js",
+          "GraphQL",
+          "Apollo",
+          "MongoDB",
+        ],
+        githubLink: "https://github.com/wojciech2000/team-mates-finder",
+      },
     ];
 
     return projects.map(
@@ -79,7 +94,7 @@ function Projects() {
                 <LiList key={index}>{technologie}</LiList>
               ))}
             </UlList>
-            <Buttons portfolio={desktop === portfolioDesktop ? true : false}>
+            <Buttons center={!liveLink ? true : false}>
               <a href={githubLink} target="_blank" rel="noopener noreferrer">
                 <Button code>Code</Button>
               </a>
