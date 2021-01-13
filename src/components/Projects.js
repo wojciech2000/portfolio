@@ -80,6 +80,7 @@ function Projects() {
           "MongoDB",
         ],
         githubLink: "https://github.com/wojciech2000/team-mates-finder",
+        liveLink: "https://team-mates-finder.netlify.app/",
       },
     ];
 
