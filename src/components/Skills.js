@@ -15,12 +15,7 @@ function Skills() {
   const {pageVariants} = useContext(DataContext);
 
   return (
-    <SkillsWrapper
-      initial="in"
-      animate="done"
-      exit="out"
-      variants={pageVariants}
-    >
+    <SkillsWrapper initial="in" animate="done" exit="out" variants={pageVariants}>
       <SkillColumn>
         <SklillIcon>
           <MdLaptopMac />
@@ -59,6 +54,8 @@ function Skills() {
           <ContrastColor>NPM</ContrastColor>
           <li>FIGMA</li>
           <li>GIT</li>
+          <li>WEBPACK</li>
+          <li>JEST/REACT-TES.-LIB.</li>
         </SklillNames>
       </SkillColumn>
     </SkillsWrapper>

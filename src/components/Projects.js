@@ -30,14 +30,7 @@ function Projects() {
       {
         desktop: progresserDesktop,
         mobile: progresserMobile,
-        usedTechnologies: [
-          "React",
-          "Redux",
-          "Node.js",
-          "Express",
-          "SCSS",
-          "MongoDB",
-        ],
+        usedTechnologies: ["React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"],
         githubLink: "https://github.com/wojciech2000/Progresser",
         liveLink: "https://progresser-app.herokuapp.com/",
       },
@@ -57,67 +50,46 @@ function Projects() {
       {
         desktop: eCommerceDesktop,
         mobile: eCommerceMobile,
-        usedTechnologies: [
-          "React",
-          "Redux",
-          "Node.js",
-          "Express",
-          "SCSS",
-          "MongoDB",
-        ],
+        usedTechnologies: ["React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"],
         githubLink: "https://github.com/wojciech2000/e-commerce-shop",
         liveLink: "https://e-comerce-app.herokuapp.com/",
       },
       {
         desktop: teamMatesFinderDesktop,
         mobile: teamMatesFinderMobile,
-        usedTechnologies: [
-          "React",
-          "SCSS",
-          "Node.js",
-          "GraphQL",
-          "Apollo",
-          "MongoDB",
-        ],
+        usedTechnologies: ["React", "SCSS", "Node.js", "GraphQL", "Apollo", "MongoDB"],
         githubLink: "https://github.com/wojciech2000/team-mates-finder",
         liveLink: "https://team-mates-finder.netlify.app/",
       },
     ];
 
-    return projects.map(
-      ({desktop, mobile, usedTechnologies, githubLink, liveLink}, index) => (
-        <Project key={index}>
-          <DesktopVersion src={desktop} />
-          <MobileVersion src={mobile} />
-          <ProjectInfo>
-            <UlList>
-              {usedTechnologies.map((technologie, index) => (
-                <LiList key={index}>{technologie}</LiList>
-              ))}
-            </UlList>
-            <Buttons center={!liveLink ? true : false}>
-              <a href={githubLink} target="_blank" rel="noopener noreferrer">
-                <Button code>Code</Button>
+    return projects.map(({desktop, mobile, usedTechnologies, githubLink, liveLink}, index) => (
+      <Project key={index}>
+        <DesktopVersion src={desktop} />
+        <MobileVersion src={mobile} />
+        <ProjectInfo>
+          <UlList>
+            {usedTechnologies.map((technologie, index) => (
+              <LiList key={index}>{technologie}</LiList>
+            ))}
+          </UlList>
+          <Buttons center={!liveLink ? true : false}>
+            <a href={githubLink} target="_blank" rel="noopener noreferrer">
+              <Button code>Code</Button>
+            </a>
+            {liveLink && (
+              <a href={liveLink} target="_blank" rel="noopener noreferrer">
+                <Button>Live</Button>
               </a>
-              {liveLink && (
-                <a href={liveLink} target="_blank" rel="noopener noreferrer">
-                  <Button>Live</Button>
-                </a>
-              )}
-            </Buttons>
-          </ProjectInfo>
-        </Project>
-      ),
-    );
+            )}
+          </Buttons>
+        </ProjectInfo>
+      </Project>
+    ));
   };
 
   return (
-    <ProjectsWrapper
-      initial="in"
-      animate="done"
-      exit="out"
-      variants={pageVariants}
-    >
+    <ProjectsWrapper initial="in" animate="done" exit="out" variants={pageVariants}>
       {displayProjects()}
     </ProjectsWrapper>
   );
