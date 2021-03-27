@@ -21,6 +21,8 @@ import eCommerceDesktop from "../pictures/e-commerce-desktop.png";
 import eCommerceMobile from "../pictures/e-commerce-mobile.png";
 import teamMatesFinderDesktop from "../pictures/team-mate-finder-desktop.png";
 import teamMatesFinderMobile from "../pictures/team-mate-finder-mobile.png";
+import searchImagesDesktop from "../pictures/search-images-desktop.png";
+import searchImagesMobile from "../pictures/search-images-mobile.png";
 
 function Projects() {
   const {pageVariants} = useContext(DataContext);
@@ -35,6 +37,27 @@ function Projects() {
         liveLink: "https://progresser-app.herokuapp.com/",
       },
       {
+        desktop: teamMatesFinderDesktop,
+        mobile: teamMatesFinderMobile,
+        usedTechnologies: ["React", "SCSS", "Node.js", "GraphQL", "Apollo", "MongoDB"],
+        githubLink: "https://github.com/wojciech2000/team-mates-finder",
+        liveLink: "https://team-mates-finder.netlify.app/",
+      },
+      {
+        desktop: eCommerceDesktop,
+        mobile: eCommerceMobile,
+        usedTechnologies: ["React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"],
+        githubLink: "https://github.com/wojciech2000/e-commerce-shop",
+        liveLink: "https://e-comerce-app.herokuapp.com/",
+      },
+      {
+        desktop: searchImagesDesktop,
+        mobile: searchImagesMobile,
+        usedTechnologies: ["React", "SCSS", "Unsplash API"],
+        githubLink: "https://github.com/wojciech2000/search-images",
+        liveLink: "https://search-images-unsplash.netlify.app/",
+      },
+      {
         desktop: eliminationTableDesktop,
         mobile: eliminationTableMobile,
         usedTechnologies: ["HTML", "SCSS", "JS"],
@@ -46,20 +69,6 @@ function Projects() {
         mobile: portfolioMobile,
         usedTechnologies: ["React", "Styl.-Comp."],
         githubLink: "https://github.com/wojciech2000/portfolio",
-      },
-      {
-        desktop: eCommerceDesktop,
-        mobile: eCommerceMobile,
-        usedTechnologies: ["React", "Redux", "Node.js", "Express", "SCSS", "MongoDB"],
-        githubLink: "https://github.com/wojciech2000/e-commerce-shop",
-        liveLink: "https://e-comerce-app.herokuapp.com/",
-      },
-      {
-        desktop: teamMatesFinderDesktop,
-        mobile: teamMatesFinderMobile,
-        usedTechnologies: ["React", "SCSS", "Node.js", "GraphQL", "Apollo", "MongoDB"],
-        githubLink: "https://github.com/wojciech2000/team-mates-finder",
-        liveLink: "https://team-mates-finder.netlify.app/",
       },
     ];
 
