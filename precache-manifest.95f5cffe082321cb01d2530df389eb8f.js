@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "548d011d498cb078596a4e5461e3ce3d",
+    "revision": "fd8742cdd6d212f046f518c76bba2d33",
     "url": "/portfolio/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/js/2.dd39aa1a.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "62d1d3c9a1535b629d13",
-    "url": "/portfolio/static/js/main.b787d801.chunk.js"
+    "revision": "cf4a1a45ac15a42a4d02",
+    "url": "/portfolio/static/js/main.a01d629a.chunk.js"
   },
   {
     "revision": "e5284505c87d0b24b753",
@@ -40,8 +40,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/portfolio/static/media/elimination_table-mobile.0d08981d.png"
   },
   {
-    "revision": "6c05c5553be23f8d8dd7ecc93e066f54",
-    "url": "/portfolio/static/media/github-icon.6c05c555.svg"
+    "revision": "481edf4100644f2d52dc8538b0823b9a",
+    "url": "/portfolio/static/media/github-icon.481edf41.svg"
   },
   {
     "revision": "47c628d8a2ad0bdfdaa317390667b238",
