@@ -1,5 +1,5 @@
-import React, {useContext} from "react";
-import {DataContext} from "./DataContext";
+import React, { useContext } from "react";
+import { DataContext } from "./DataContext";
 import {
   SkillsWrapper,
   SkillColumn,
@@ -8,14 +8,20 @@ import {
   SklillNames,
   ContrastColor,
 } from "../styled-components/skills";
-import {MdLaptopMac} from "react-icons/md";
-import {FaDatabase} from "react-icons/fa";
-import {FiSettings} from "react-icons/fi";
+import { MdLaptopMac } from "react-icons/md";
+import { FaDatabase } from "react-icons/fa";
+import { FiSettings } from "react-icons/fi";
 function Skills() {
-  const {pageVariants} = useContext(DataContext);
+  const { pageVariants } =
+    useContext(DataContext);
 
   return (
-    <SkillsWrapper initial="in" animate="done" exit="out" variants={pageVariants}>
+    <SkillsWrapper
+      initial="in"
+      animate="done"
+      exit="out"
+      variants={pageVariants}
+    >
       <SkillColumn>
         <SklillIcon>
           <MdLaptopMac />
@@ -23,13 +29,14 @@ function Skills() {
         <SkillTitle>Front-end</SkillTitle>
         <SklillNames>
           <li>HTML5</li>
-          <ContrastColor>CSS3</ContrastColor>
-          <li>SCSS</li>
-          <li>JAVASCRIPT</li>
-          <li>TYPESCRIPT</li>
-          <li>REACT</li>
-          <ContrastColor>REDUX</ContrastColor>
-          <li>STYLED-COMPONENTS</li>
+          <ContrastColor>CSS3/SCSS</ContrastColor>
+          <li>JS/TS</li>
+          <li>REACT/REDUX</li>
+          <ContrastColor>
+            STYLED-COMPONENTS
+          </ContrastColor>
+          <li>TAILWIND</li>
+          <li>JEST/REACT-TEST.-LIB.</li>
         </SklillNames>
       </SkillColumn>
       <SkillColumn>
@@ -40,7 +47,10 @@ function Skills() {
         <SklillNames>
           <li>NODE.JS</li>
           <li>EXPRESS</li>
-          <ContrastColor>MYSQL</ContrastColor>
+          <ContrastColor>
+            MYSQL/POSTGRES/MONGODB
+          </ContrastColor>
+          <li>MONGOOSE/TYPEORM</li>
           <li>GRAPHQL</li>
           <li>REST API</li>
         </SklillNames>
@@ -51,11 +61,11 @@ function Skills() {
         </SklillIcon>
         <SkillTitle>Tools</SkillTitle>
         <SklillNames>
-          <ContrastColor>NPM</ContrastColor>
-          <li>FIGMA</li>
-          <li>GIT</li>
-          <li>WEBPACK</li>
-          <li>JEST/REACT-TES.-LIB.</li>
+          <ContrastColor>NPM/YARN</ContrastColor>
+          <li>FIGMA/ZEPLIN</li>
+          <li>JIRA/TRELLO</li>
+          <li>STRAPI</li>
+          <ContrastColor>GIT</ContrastColor>
         </SklillNames>
       </SkillColumn>
     </SkillsWrapper>
